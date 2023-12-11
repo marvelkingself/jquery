@@ -16,12 +16,17 @@ $( document ).ready(()=>{
         e.preventDefault()
            alert("email id empity") 
         }
+        else if(alldata.password===""||alldata.confirmPassword===""){
+            e.preventDefault()
+                alert("password is empity") 
+             }
        else if(alldata.password!=alldata.confirmPassword){
         e.preventDefault()
             alert("Conform PassWord is not Matched") 
          }
+
        else if(!alldata.agree){
-        e.preventDefault()
+           e.preventDefault()
             alert("Plzz checked terms and conditions ") 
          }
          else {
